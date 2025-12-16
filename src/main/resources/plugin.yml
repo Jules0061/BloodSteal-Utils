@@ -3,6 +3,7 @@ main: org.jules.BloodStealUtils.Main
 version: 1.4
 api-version: 1.21
 author: Jules
+website: https://github.com/Jules0061/BloodSteal-Utils
 
 commands:
   nightvision:
