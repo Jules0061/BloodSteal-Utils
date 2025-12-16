@@ -1,0 +1,40 @@
+name: BloodSteal-Utils
+main: org.jules.BloodStealUtils.Main
+version: 1.4
+api-version: 1.21
+author: Jules
+
+commands:
+  nightvision:
+    description: Toggle Night Vision
+    usage: /nightvision
+    aliases: [nv]
+    permission: nightvision.use
+  bloodsteal-utils:
+    description: Main BloodSteal-Utils command
+    usage: /bloodsteal-utils reload
+    aliases: [bsu]
+    permission: bloodsteal.reload
+  chattoggle:
+    description: Toggle player chat visibility
+    usage: /chattoggle
+    aliases: [togglechat]
+    permission: togglechat.use
+  ping:
+    description: Check your ping or another player's ping
+    usage: /ping [player]
+    permission: ping.use
+# --- #
+permissions:
+  nightvision.use:
+    description: Allows using night vision
+    default: true
+  bloodsteal.reload:
+    description: Allows reloading the BloodSteal-Utils config
+    default: op
+  togglechat.use:
+    description: Allows toggling player chat
+    default: true
+  ping.use:
+    description: Allows checking ping
+    default: true

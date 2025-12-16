@@ -1,0 +1,30 @@
+# BloodSteal-Utils, Coded & made by Jules.
+
+# Own Ping
+OwnPing:
+  Message: "<gray>Your ping is <green>%player_ping%"
+  ActionBar: "<gray>Your ping is <green>%player_ping%"
+
+# Player Ping
+PlayerPing:
+  Message: "<gray>%player_name%'s ping is <green>%player_ping%"
+  ActionBar: "<gray>%player_name%'s ping is <green>%player_ping%"
+  PlayerNotFound: "<red>Player not found!"
+
+# Toggle Chat
+ToggleChat:
+  Enabled: "<gray>Chat Enabled!"
+  Disabled: "<red>Chat Disabled!"
+  ActionBar-Enabled: "<gray>Chat Enabled!"
+  ActionBar-Disabled: "<red>Chat Disabled!"
+
+# Night Vision
+Messages:
+  Enabled: "<Gray>Night vision enabled."
+  Disabled: "<red>Night vision disabled!"
+  Action-Bar-Enabled: "<Gray>Night vision enabled."
+  Action-Bar-Disabled: "<red>Night vision disabled!"
+Effect:
+  Duration-Seconds: 16
+  Amplifier: 0
+  Reapply-Ticks: 100
