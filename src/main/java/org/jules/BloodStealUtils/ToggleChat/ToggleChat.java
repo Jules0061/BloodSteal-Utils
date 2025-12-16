@@ -31,7 +31,7 @@ public class ToggleChat implements CommandExecutor, Listener {
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String @NotNull [] args) {
         if (!(sender instanceof Player player)) {
-            sender.sendMessage("§cOnly players can use this command.");
+            sender.sendMessage("<red>Only players can use this command.");
             return true;
         }
 
@@ -71,7 +71,6 @@ public class ToggleChat implements CommandExecutor, Listener {
 
         viewers.removeIf(viewer -> {
             if (viewer instanceof Player recipient) {
-                // Don't filter out the message sender so they can see their own messages
                 if (recipient.getUniqueId().equals(sender.getUniqueId())) {
                     return false;
                 }

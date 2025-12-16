@@ -26,17 +26,14 @@ public final class Main extends JavaPlugin {
 
         saveDefaultConfig();
 
-        // Register NightVision
         NightVision nightVision = new NightVision(this);
         getServer().getPluginManager().registerEvents(nightVision, this);
         Objects.requireNonNull(getCommand("nightvision")).setExecutor(nightVision);
 
-        // Register ToggleChat
         ToggleChat toggleChat = new ToggleChat(this);
         getServer().getPluginManager().registerEvents(toggleChat, this);
         Objects.requireNonNull(getCommand("chattoggle")).setExecutor(toggleChat);
 
-        // Register PlayerPing (handles both /ping and /ping <player>)
         PlayerPing playerPing = new PlayerPing(this);
         Objects.requireNonNull(getCommand("ping")).setExecutor(playerPing);
         Objects.requireNonNull(getCommand("ping")).setTabCompleter(playerPing);
@@ -64,16 +61,16 @@ public final class Main extends JavaPlugin {
         if (args.length == 1 && args[0].equalsIgnoreCase("reload")) {
 
             if (!sender.hasPermission("bloodsteal.reload")) {
-                sender.sendMessage("§cYou do not have permission to do this.");
+                sender.sendMessage("<red>You do not have permission to do this.");
                 return true;
             }
 
             reloadConfig();
-            sender.sendMessage("§aBloodSteal-Utils config reloaded.");
+            sender.sendMessage("<green>BloodSteal-Utils config reloaded.");
             return true;
         }
 
-        sender.sendMessage("§cUsage: /bloodsteal-utils reload");
+        sender.sendMessage("<red>Usage: /bloodsteal-utils reload");
         return true;
     }
 }
