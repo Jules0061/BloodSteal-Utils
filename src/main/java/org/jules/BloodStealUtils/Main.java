@@ -1,5 +1,6 @@
 package org.jules.BloodStealUtils;
 
+import net.kyori.adventure.text.minimessage.MiniMessage;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -14,6 +15,7 @@ import java.util.Objects;
 public final class Main extends JavaPlugin {
 
     private static Main instance;
+    private final MiniMessage miniMessage = MiniMessage.miniMessage();
 
     @SuppressWarnings("unused")
     public static Main getInstance() {
@@ -61,16 +63,16 @@ public final class Main extends JavaPlugin {
         if (args.length == 1 && args[0].equalsIgnoreCase("reload")) {
 
             if (!sender.hasPermission("bloodsteal.reload")) {
-                sender.sendMessage("<red>You do not have permission to do this.");
+                sender.sendMessage(miniMessage.deserialize("<red>You do not have permission to do this."));
                 return true;
             }
 
             reloadConfig();
-            sender.sendMessage("<green>BloodSteal-Utils config reloaded.");
+            sender.sendMessage(miniMessage.deserialize("<green>BloodSteal-Utils config reloaded."));
             return true;
         }
 
-        sender.sendMessage("<red>Usage: /bloodsteal-utils reload");
+        sender.sendMessage(miniMessage.deserialize("<red>Usage: /bloodsteal-utils reload"));
         return true;
     }
 }
