@@ -23,8 +23,20 @@ Messages:
   Enabled: "<Gray>Night vision enabled."
   Disabled: "<red>Night vision disabled!"
   Action-Bar-Enabled: "<Gray>Night vision enabled."
-  Action-Bar-Disabled: "<red>Night vision disabled!"
+  Action-Bar-Disabled: "<red>Night vision disabled."
 Effect:
   Duration-Seconds: 16
   Amplifier: 0
   Reapply-Ticks: 100
+
+# Free Heart (No Chat messages needed due to the LifeStealZ plugin already sending one upon player command)
+FreeHeart:
+  cooldown-time: "7d"  # Can be: 7d, 1h, 30m, 45s, or combinations like "1d 12h"
+  cooldown: "<red>You must wait <days> days, <hours> hours and <minutes> minutes before using this command again."
+  actionbar: "<gray>You received 1x Heart!"
+# Free Food
+FreeFood:
+  cooldown-time: "1h"  # Can be: 7d, 1h, 30m, 45s, or combinations like "2h 30m"
+  cooldown: "<red>You must wait <minutes> minutes and <seconds> seconds before using this command again."
+  actionbar: "<gold>You received 64x Cooked Steak"
+  message: "<gray>+You received 64x Cooked Steak"

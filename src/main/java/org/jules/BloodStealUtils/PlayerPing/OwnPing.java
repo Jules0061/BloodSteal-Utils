@@ -22,7 +22,7 @@ public class OwnPing implements CommandExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String @NotNull [] args) {
         if (!(sender instanceof Player player)) {
-            sender.sendMessage("§cOnly players can use this command.");
+            sender.sendMessage("<red>Only players can use this command.");
             return true;
         }
 

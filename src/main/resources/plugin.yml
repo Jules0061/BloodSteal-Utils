@@ -1,6 +1,6 @@
 name: BloodSteal-Utils
 main: org.jules.BloodStealUtils.Main
-version: 1.4
+version: 1.6
 api-version: 1.21
 author: Jules
 website: https://github.com/Jules0061/BloodSteal-Utils
@@ -25,7 +25,16 @@ commands:
     description: Check your ping or another player's ping
     usage: /ping [player]
     permission: ping.use
-# --- #
+  weekly:
+    description: Claim your weekly heart
+    usage: /weekly
+    aliases: [freeheart]
+    permission: weekly.use
+  freefood:
+    description: Claim your hourly food
+    usage: /freefood
+    permission: freefood.use
+
 permissions:
   nightvision.use:
     description: Allows using night vision
@@ -38,4 +47,10 @@ permissions:
     default: true
   ping.use:
     description: Allows checking ping
+    default: true
+  weekly.use:
+    description: Allows claiming the weekly heart
+    default: true
+  freefood.use:
+    description: Allows claiming hourly food
     default: true

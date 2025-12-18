@@ -3,3 +3,5 @@ org/jules/BloodStealUtils/NightVision/NightVision.class
 org/jules/BloodStealUtils/PlayerPing/OwnPing.class
 org/jules/BloodStealUtils/Main.class
 org/jules/BloodStealUtils/ToggleChat/ToggleChat.class
+org/jules/BloodStealUtils/FreeStuff/FreeHeart.class
+org/jules/BloodStealUtils/FreeStuff/FreeFood.class
